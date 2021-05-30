@@ -706,12 +706,10 @@ p {
 
 .work-overlay {
   position: absolute;
-  width: 370px;
-  height: 294px;
+  width: 100%;
+  height: 100%;
 
-  top: 0;
-  left: 0;
-  transform: translateY(100%);
+  transform: translateY(0%);
 
   background-image: linear-gradient(to right, var(--work-anim-color), var(--work-anim-color));
 
@@ -735,7 +733,7 @@ p {
 
 .work-link:hover .work-overlay,
 .work-link:focus .work-overlay {
-  transform: translateY(0);
+  transform: translateY(-100%);
 }
 
 .work-wrap {
