@@ -588,7 +588,6 @@ p {
   content: '';
   display: inline-block;
 
-  position: absolute;
   left: 0;
 
   width: 16px;
@@ -596,15 +595,19 @@ p {
 }
 
 .checkbox-icon-none {
+  position: absolute;
+  top: 25%;
+
   background-image: url(../images/checkbox.svg);
   background-repeat: no-repeat;
   background-size: cover;
-
-  top: 25%;
 }
 
 .checkbox-icon-active {
+  position: absolute;
+
   opacity: 0;
+
   background-image: url(../images/checkbox-active.svg);
   background-repeat: no-repeat;
   background-size: cover;
