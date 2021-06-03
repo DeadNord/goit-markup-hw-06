@@ -64,6 +64,65 @@
         </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
+            <h3 class="modal-detail">Оставьте свои данные, мы вам перезвоним</h3>
+
+            <form name="subscribe_form" autocomplete="on" class="subscribe-form">
+              <label class="subscribe-name">
+                Имя
+                <svg class="modal-form-icon">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+                <input
+                  class="form-input-main form-input-info"
+                  type="text"
+                  name="name"
+                  autocomplete="on"
+                />
+              </label>
+              <label class="subscribe-name">
+                Телефон
+                <svg class="modal-form-icon">
+                  <use href="./images/icons.svg#icon-phone-black"></use>
+                </svg>
+                <input
+                  class="form-input-main form-input-info"
+                  type="tel"
+                  name="tel"
+                  autocomplete="on"
+                />
+              </label>
+              <label class="subscribe-name">
+                Почта
+                <input
+                  class="form-input-main form-input-info"
+                  type="email"
+                  name="email"
+                  autocomplete="on"
+                />
+                <svg class="modal-form-icon">
+                  <use href="./images/icons.svg#icon-email-black"></use>
+                </svg>
+              </label>
+              <label class="subscribe-name">
+                Комментарий
+                <textarea
+                  class="form-input-main form-input-comment"
+                  name="comment"
+                  placeholder="Введите текст"
+                ></textarea>
+              </label>
+              <label class="subscribe-agree">
+                <!-- <svg class="checkbox">
+                  <use href="./images/icons.svg#checkbox"></use>
+                </svg>
+                <svg class="checkbox">
+                  <use href="./images/icons.svg#checkbox-active"></use>
+                </svg> -->
+                <input type="checkbox" name="valid" value="agree" />
+                Соглашаюсь с рассылкой и принимаю <a href="" class="link-agree">Условия договора</a>
+              </label>
+              <button type="submit" class="button-form">Отправить</button>
+            </form>
             <button data-modal-close type="button" class="icon-center modal-close-button">
               <svg class="modal-close-icon">
                 <use href="./images/icons.svg#icon-close-button"></use>
@@ -393,6 +452,21 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="subscribe-footer">
+          <h3 class="sub-title sub-title-join">Подпишитесь на рассылку</h3>
+
+          <form name="subscribe_form" autocomplete="on" class="form-item">
+            <label>
+              <input class="form-input-mail" type="email" name="email" placeholder="E-mail" />
+            </label>
+            <button type="submit" class="button-subscribe">
+              Подписаться
+              <svg class="button-subscribe-icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
