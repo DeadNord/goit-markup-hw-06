@@ -62,70 +62,6 @@
           <h1 class="slogan">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
           <button data-modal-open type="button" class="button">Заказать услугу</button>
         </div>
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <h3 class="modal-detail">Оставьте свои данные, мы вам перезвоним</h3>
-
-            <form name="subscribe_form" autocomplete="on" class="subscribe-form">
-              <label class="subscribe-name">
-                Имя
-                <svg class="modal-form-icon">
-                  <use href="./images/icons.svg#icon-person"></use>
-                </svg>
-                <input
-                  class="form-input-main form-input-info"
-                  type="text"
-                  name="name"
-                  autocomplete="on"
-                />
-              </label>
-              <label class="subscribe-name">
-                Телефон
-                <svg class="modal-form-icon">
-                  <use href="./images/icons.svg#icon-phone-black"></use>
-                </svg>
-                <input
-                  class="form-input-main form-input-info"
-                  type="tel"
-                  name="tel"
-                  autocomplete="on"
-                />
-              </label>
-              <label class="subscribe-name">
-                Почта
-                <input
-                  class="form-input-main form-input-info"
-                  type="email"
-                  name="email"
-                  autocomplete="on"
-                />
-                <svg class="modal-form-icon">
-                  <use href="./images/icons.svg#icon-email-black"></use>
-                </svg>
-              </label>
-              <label class="subscribe-name">
-                Комментарий
-                <textarea
-                  class="form-input-main form-input-comment"
-                  name="comment"
-                  placeholder="Введите текст"
-                ></textarea>
-              </label>
-              <label class="subscribe-agree">
-                <input class="checkbox-main" type="checkbox" name="valid" value="agree" />
-                <span class="checkbox-icon checkbox-icon-none"></span>
-                <span class="checkbox-icon checkbox-icon-active"></span>
-                Соглашаюсь с рассылкой и принимаю <a href="" class="link-agree">Условия договора</a>
-              </label>
-              <button type="submit" class="button-form">Отправить</button>
-            </form>
-            <button data-modal-close type="button" class="icon-center modal-close-button">
-              <svg class="modal-close-icon">
-                <use href="./images/icons.svg#icon-close-button"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
       </section>
       <section class="section">
         <div class="container">
@@ -466,6 +402,71 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <h3 class="modal-detail">Оставьте свои данные, мы вам перезвоним</h3>
+
+        <form name="subscribe_form" autocomplete="on" class="subscribe-form">
+          <label class="subscribe-name">
+            Имя
+            <svg class="modal-form-icon">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+            <input
+              class="form-input-main form-input-info"
+              type="text"
+              name="name"
+              autocomplete="on"
+            />
+          </label>
+          <label class="subscribe-name">
+            Телефон
+            <svg class="modal-form-icon">
+              <use href="./images/icons.svg#icon-phone-black"></use>
+            </svg>
+            <input
+              class="form-input-main form-input-info"
+              type="tel"
+              name="tel"
+              autocomplete="on"
+            />
+          </label>
+          <label class="subscribe-name">
+            Почта
+            <input
+              class="form-input-main form-input-info"
+              type="email"
+              name="email"
+              autocomplete="on"
+            />
+            <svg class="modal-form-icon">
+              <use href="./images/icons.svg#icon-email-black"></use>
+            </svg>
+          </label>
+          <label class="subscribe-name">
+            Комментарий
+            <textarea
+              class="form-input-main form-input-comment"
+              name="comment"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <label class="subscribe-agree">
+            <input type="checkbox" name="valid" value="agree" />
+            <span class="checkbox-icon"></span>
+            Соглашаюсь с рассылкой и принимаю <a href="" class="link-agree">Условия договора</a>
+          </label>
+          <div>
+            <button type="submit" class="button-form">Отправить</button>
+          </div>
+        </form>
+        <button data-modal-close type="button" class="icon-center modal-close-button">
+          <svg class="modal-close-icon">
+            <use href="./images/icons.svg#icon-close-button"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>

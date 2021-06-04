@@ -215,7 +215,7 @@ p {
 
 .subscribe-footer {
   width: 570px;
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .form-item {
@@ -231,6 +231,7 @@ p {
   padding-top: 15px;
   padding-bottom: 15px;
 
+  color: var(--third-text-color);
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -469,6 +470,8 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
 
+  padding: 40px;
+
   min-width: 528px;
   min-height: 581px;
 
@@ -483,10 +486,8 @@ p {
 
 .modal-close-button {
   position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 8px;
-  margin-right: 8px;
+  top: 8px;
+  right: 8px;
   cursor: pointer;
   padding: 0;
 
@@ -515,7 +516,6 @@ p {
   letter-spacing: 0.03em;
   text-align: center;
 
-  margin-top: 40px;
   margin-bottom: 12px;
 }
 
@@ -567,6 +567,7 @@ p {
   text-align: initial;
 
   width: auto;
+  margin-bottom: 10px;
 
   font-size: 12px;
   line-height: 1.17;
@@ -575,12 +576,11 @@ p {
   color: var(--secondary-text-color);
 }
 
-.subscribe-name:not(:last-child) {
-  margin-bottom: 10px;
+.subscribe-name:nth-child(4) {
+  margin-bottom: 20px;
 }
 
-.checkbox-main {
-  margin-right: 8.38px;
+.subscribe-agree input[type='checkbox'] {
   appearance: none;
 }
 
@@ -588,37 +588,29 @@ p {
   content: '';
   display: inline-block;
 
-  left: 0;
+  margin-right: 8.38px;
 
   width: 16px;
   height: 15px;
+
+  border: 2px solid var(--main-text-color);
+  border-radius: 2px;
+
+  transition: border-color var(--duration) var(--timing-function),
+    background-color var(--duration) var(--timing-function);
 }
 
-.checkbox-icon-none {
-  position: absolute;
-  top: 25%;
+.subscribe-agree input[type='checkbox']:focus ~ .checkbox-icon {
+  border-color: var(--main-theme-color);
+}
 
+.subscribe-agree input[type='checkbox']:checked ~ .checkbox-icon {
+  border-color: var(--main-theme-color);
+
+  background-color: var(--main-theme-color);
   background-image: url(../images/checkbox.svg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.checkbox-icon-active {
-  position: absolute;
-
-  opacity: 0;
-
-  background-image: url(../images/checkbox-active.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.checkbox-main:checked ~ .checkbox-icon-none {
-  opacity: 0;
-}
-
-.checkbox-main:checked ~ .checkbox-icon-active {
-  opacity: 1;
 }
 
 .subscribe-agree {
@@ -628,7 +620,6 @@ p {
   align-items: center;
   width: 425px;
   height: 24px;
-  margin-top: 10px;
   margin-bottom: 30px;
 
   font-size: 14px;
@@ -662,9 +653,6 @@ p {
   height: 50px;
   min-width: 200px;
 
-  margin-left: 124px;
-  margin-right: 124px;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -679,6 +667,11 @@ p {
   background-color: var(--main-theme-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+.subscribe-form div {
+  display: flex;
+  justify-content: center;
 }
 
 .title {
